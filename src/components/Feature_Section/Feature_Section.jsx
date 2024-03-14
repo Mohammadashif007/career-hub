@@ -33,7 +33,7 @@ const Feature_Section = () => {
                     <Job key={job.id} job={job}></Job>
                 ))}
             </div>
-            <div className="flex justify-center">
+            <div className={dataLength === jobs.length ? "hidden" : 'flex justify-center'}>
                 <button onClick={()=> setDataLength(jobs.length)} className="px-10 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-[#fff] text-[18px] rounded-xl text-center mt-10">
                     See All
                 </button>
